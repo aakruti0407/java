@@ -1,19 +1,24 @@
-#include<stdio.h>
+#include<iostream.h>
 #include<conio.h>
 
-void add(int a,int b)
+using namespace std;
+void swapv(int x, int y);
+
+int main()
 {
-     printf("\nAddition:%d",a+b);
+    int a=2,b=4;
+    swapv(a,b);
+    cout<<"a="<<"b="<<b;
+
+    return=0;
 }
 
-void main()
+void swapv(int x, int y)
 {
-     int x,y;
-     clrscr();
-     printf("\nEnter value:");
-     scanf("%d",&x);
-     printf("nEnter value:");
-     scanf("%d",&y);
-     add(x,y);
-     getch();
+   int t;
+   t = x;
+   x = y;
+   y = t;
+   cout<<"x ="<<x <<" y =' <<y;
+   getch();
 }
